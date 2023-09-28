@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 7 - StopWatch</title>
+    <link rel="icon" href="polygon-blue-icon-stopwatch-vector-13617091.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">
+            <span class="char">S</span><span class="char">t</span><span class="char"><i class="fa-regular fa-clock" style="font-size: 30px;"></i></span><span class="char">p</span><span class="char">w</span><span class="char">a</span><span class="char">t</span><span class="char">c</span><span class="char">h</span>
+        </div>
+        <div style="position: absolute; width: inherit; height: inherit; z-index: 0"><img src="7225605.jpg" style="width: 100%; height: 100%; object-fit: cover; "></div>
+        <div class="clock">
+            <div class="display">00:00</div>
+            <div class="btn">
+                <button class="resetbtn" id="reset" onclick="reset()">RESET</button>
+                <button class="startbtn" id="start" onclick=start()>START</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="stop.js"></script>
+</html>

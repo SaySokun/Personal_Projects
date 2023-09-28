@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="806131.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="page" id="page">
+            <div class="otxt"><span style="vertical-align:middle;">O</span> turn...</div>
+            <div class="container">
+            <hr class="lineh1" width="420px" color="orange">
+            <hr class="lineh1 lineh2" width="420px" color="orange">
+            <hr class="lineh1 lineh3" width="420px" color="orange">
+            <hr class="lined" width="520px" color="orange">
+            <hr class="lined lined2" width="520px" color="orange">
+            <hr class="lined linev" width="520px" color="orange">
+            <hr class="lined linev2" width="520px" color="orange">
+            <hr class="lined linev3" width="520px" color="orange">
+
+            <div class="item" id="a1">                
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="a2">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="a3">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="b1">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="b2">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="b3">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="c1">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="c2">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <div class="item" id="c3">
+                <i class="fa-regular fa-circle" id="circle"></i>
+                <i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+        </div>
+        <div class="xtxt"> <span style="vertical-align:middle;">X</span> turn...</div>
+    </div>
+    <!-- Title -->
+    <div class="title">
+        <span style="color:rgba(255, 166, 0, 0.8)">Tic</span>-<span style="color:rgb(255, 255, 255)">Tac</span>-<span style="color:rgba(255, 166, 0, 0.8)">Toe</span>
+    </div>
+    <div class="player">
+        <div class="playerID">    
+                <div class="playerO">Player <span style="margin-left: 20px;"><i class="fa-regular fa-circle" id="circle"></i></span></div>
+                <div class="playerX">Player <span style="margin-left: 20px;"><i class="fa-solid fa-xmark" id="cross"></i></span></div>
+        </div>
+        <div class="pPoint">
+            <div class="pOp">0</div>
+            <div class="pXp">0</div>
+        </div>
+    </div>
+
+    <div class="drawbar">
+        <div class="draw">
+            <div class="drawtxt">Draw</div>
+            <div class="pDp">0</div>
+        </div>
+    </div>
+    <!-- Choice window -->
+    <div class="choice">
+        <div class="context">
+            Choose a start sign...
+        </div>
+        <div class="sign">
+            <div class="circleSign"><i class="fa-regular fa-circle" id="circle"></i></div>
+            <i style="font-size:40px;color:rgba(255, 255, 255, 0.5)" class="fa-solid fa-arrows-left-right"></i>
+            <div class="crossSign"><i class="fa-solid fa-xmark" id="cross"></i></div>
+        </div>
+        <div class="okbtn">
+            <button onclick=chose() id="ok">O K A Y</button>
+        </div> 
+    </div>
+
+    <!-- Winner window -->
+    <div class="choice winner-menu">
+        <div class="context declare">
+            Winner !
+        </div>
+        <div class="winner">
+            Player X
+        </div>
+        <div class="btn">
+            <button class="restart" onclick=restart()>Restart</button>
+            <button class="again" onclick=again()>Again</button>
+            <button class="done" onclick=done()>Done</button>
+        </div> 
+    </div>
+
+    <!-- Strike line -->
+    <div class="line_wrap">
+
+    </div>
+
+
+</body>
+<script src="index.js"></script>
+</html>
