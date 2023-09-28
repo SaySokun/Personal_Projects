@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divmain{
+            width: 100%;
+            height: 700px;
+            background-color: lightgray;
+            display: flex;
+        }
+        .container{
+            display: flex;
+            width: 500px;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            overflow: hidden;
+        }
+        .container img{
+            width:100%;
+            height: 100%;
+            opacity: 0.5;
+            transition: 300ms;
+            position: absolute;
+        }
+        .container img:hover{
+            transform: scale(1.2);
+            transition: 300ms;
+            position: absolute;
+            cursor:move;
+        }
+        #text{
+            width: 50%;
+            height: 50%;
+            background-color: lightcoral;
+            position: relative;
+        }
+        .sec2{
+            width: 500px;
+            height: 300px;
+            background-color: aquamarine;
+            margin-left: 600px;
+        }
+        .sec3{
+            width: 1000px;
+            height: 300px;
+            background-color: aquamarine;
+            margin-top: 350px;
+                
+        }
+.background-tint {
+  background-color: rgba(200,100,0,.5);
+  background-blend-mode: multiply;
+}
+    </style>
+</head>
+<body>
+    <div class="divmain">
+    <div class="container">
+        <img src="img/dessert.jpg" alt="">
+        <div id="text"></div>        
+    </div>
+    <div class="sec2">
+        <div class="container">
+            <img src="img/dessert.jpg" alt="">
+            <div id="text"></div>        
+        </div>
+    </div>
+    <div class="sec3">
+        
+    </div>
+    </div>
+</body>
+</html>
