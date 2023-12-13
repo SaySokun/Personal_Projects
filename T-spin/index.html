@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 8 - Catch Bokerthy</title>
+    <link rel="icon" href="Bokerthy.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bg">
+        <img src="background.jpg" class="bgimg">
+        <div class="title">Catch&emsp13;<span class="char">Bokerthy</span></div>
+        <div class="dash">
+            <div class="dasharea">
+                <div class="scoreArea">
+                    <img class="dashT imgActive" src="Bokerthy.jpg" alt="">
+                    <img class="dashG" src="g.ty.png" alt="">
+                    <h1> x <span class="point">0</span></h1>
+                </div>
+                <div class="timeArea">
+                    <i class="fa-regular fa-clock"></i>
+                    <h1 class="count" style="margin-left:10%; margin-top: 25px;">00s</h1>
+                </div>
+                <div class="pauceArea">
+                    <h1><i class="fa-solid fa-pause"></i></h1>
+                </div>
+            </div>
+        </div>
+        <!-- Game mode choice -->
+        <div class="modeWrap">
+            <div class="modetxt">
+                <h1 class="modetxt">- Mode -</h1>
+            </div>
+            
+            <div class="mode flexer">
+                <div class="mode1 flexer">Catch</div>
+                <div class="mode2 flexer">Find n Pop</div>
+            </div>
+        </div>
+
+
+        <!-- Menu -->
+        <div class="menuWrap">
+            <div class="menu">
+                <div class="modeTop flexer"><p style="padding-top: 25px;">Preset</p></div>
+                <div class="modeMid">
+                    <div class="item t15 flexer">15s</div>
+                    <div class="item t30 flexer">30s</div>
+                    <div class="item t60 flexer">60s</div>
+                    <div class="item t120 flexer">120s</div>
+                </div>
+                <div class="modeMid2 flexer">
+                    <div class="left_arrow flexer"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="mid">
+                        <div class="midwrap">
+                            <img class="menuT imgActive" src="Bokerthy.jpg" alt="">
+                            <img class="menuG" src="g.ty.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right_arrow flexer"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <div class="modeBottom"><button onclick=start(timeSelect) class="catch flexer"><p>Catch!</p></button></div>
+            </div>
+        </div>
+        
+        <!-- Pauce -->
+        <div class="pauceWrap">
+            <div class="pauceOpt">
+                <div class="pauceTxt flexer">PAUSE</div>
+                <div class="opt res flexer">- Resume -</div>
+                <div class="opt restart flexer">Restart</div>
+                <div class="opt state flexer">State</div>
+            </div>
+        </div>
+        <div class="stateWrap">
+            <div class="stateOpt">
+                <div class="pauceTxt flexer overtxt">- STATE -</div>
+                <div class="stateArea">
+                    <div class="stateInfo">
+                        <div class="info">Time Used</div>
+                        <div class="info">Total Point</div>
+                        <div class="info">Avg. Speed</div>
+                        <div class="info">Total Time</div>
+                    </div>
+                    <div class="staValue stateInfo">
+                        <div class="info time_used">00</div>
+                        <div class="info total_point">00</div>
+                        <div class="info avg_speed">00</div>
+                        <div class="info total_time">00</div>
+                    </div>
+                </div>
+                <div class="staNav sn">
+                    <div class="sNav staRestart flexer">Restart</div>
+                    <div class="sNav staResume flexer">Resume</div>
+                    <div class="sNav staBack flexer">Back</div>
+                </div>
+                <div class="staNav mainmenu" style="display: none;">
+                    <div class=" flexer staRestart" style=" width: 100%; transition: 300ms all;">Main Menu</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img class="bokerthy imgActive" src="Bokerthy.jpg" alt="">
+            <img class='Gty' src="g.ty.png">
+        </div>
+
+
+    </div>
+</body>
+<script src="script.js">
+
+    
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #000;
+        }
+        .box{
+            width: 7rem;
+            height: 7rem;
+            background: linear-gradient( rgba(0, 0, 255, 0.656),rgb(102, 223, 253));
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+            transition: 1000ms all;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative;"></div>
+    <div class="box"></div>
+</body>
+    <script>
+let move = ()=>{
+    box.style.top = `${Math.floor(Math.random()*90)}vh`
+    box.style.left = `${Math.floor(Math.random()*90)}vw`
+    box.style.bottom = `${Math.floor(Math.random()*90)}vh`
+    box.style.right = `${Math.floor(Math.random()*90)}vw`
+    }
+
+    let box = document.querySelector('.box')
+    let timer = (ms)=>{
+    return new Promise((resolve,reject)=>{
+        if(time<10){setTimeout(() => {
+            resolve(down)
+        }, ms);}
+        else{
+            reject()
+        }
+    })
+}
+let time=0
+async function down(){
+    try{
+        while(time<10){
+            box.style.display = 'none'
+            move()
+            await timer(2000)
+                box.style.display = 'flex'
+            await timer(650)
+            box.style.display = 'none'
+            // setTimeout(() => {
+            //     box.style.display = 'flex'
+            // }, 3450);    
+            time++;
+            console.log(pts)
+        }
+    }  
+    catch{
+        alert('error')
+    }
+}
+let pts = 0
+    down()
+    box.addEventListener('click',()=>{
+        pts++
+        })
+    </script>
+</html>
