@@ -1,0 +1,155 @@
+.finishedPopup{
+    display: none;
+    transition: 150ms all linear;
+}
+.statArea{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 230px;
+    top:90px;
+    left:200px;
+    color:lightgray;
+}
+.statTitle{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.statWrap{
+    display: flex;
+    width: 100%;
+    height: 130px;
+}
+.statInfo{
+    text-indent: 50px;
+    line-height: 1px;
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    /* background: rgba(255, 255, 0, 0.081); */
+    display: flex;
+    flex-direction: column;
+}
+.statValue{
+    line-height: 1px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.statBtn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.compass{
+    width: 50px;
+    height: 100%;
+    position: relative;
+}
+.statbtn{
+    height: 100%;
+    width: 40%;
+    transition: 100ms all linear;
+    cursor: pointer;
+}
+.needle{
+    rotate: 0;
+}
+.statRestartbtn:hover{
+    text-shadow: 0px 0px 10px red;
+    transform: translate(10px, -1px);
+}
+.statDonebtn:hover{
+    text-shadow: 0px 0px 10px red;
+    transform: translate(-10px, -1px);
+
+}
+
+
+.MfinishedPopup{
+    display: none;
+    z-index: 30;
+    transition: 150ms all linear;
+    position: absolute;
+    top:170px;
+}
+.MfinishedPopup img{
+   width: 370px;
+}
+.MstatArea{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 156px;
+    height: 120px;
+    top:45px;
+    left:110px;
+    color:lightgray;
+}
+.MstatTitle{
+    width: 100%;
+    height: 50px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.MstatWrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.MstatInfo{
+    text-indent: 8px;
+    line-height: 0.1px;
+    width: 50%;
+    height: 100%;
+    font-size: 8px;
+    /* background: rgba(255, 255, 0, 0.081); */
+    display: flex;
+    flex-direction: column;
+}
+.MstatValue{
+    line-height: 0.5px;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.MstatBtn{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    font-size: 7px;
+    justify-content: space-around;
+}
+.Mcompass{
+    width: 100%;
+    position: relative;
+}
+.Mstatbtn{
+    height: 100%;
+    width: 40%;
+    transition: 100ms all linear;
+    cursor: pointer;
+}
+.Mneedle{
+    rotate: 0;
+}
+.MstatRestartbtn:hover{
+    text-shadow: 0px 0px 10px red;
+    transform: translate(2px, -1px);
+}
+.MstatDonebtn:hover{
+    text-shadow: 0px 0px 10px red;
+    transform: translate(-2px, -1px);
+
+}
